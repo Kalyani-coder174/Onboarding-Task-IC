@@ -1,0 +1,38 @@
+--------------------------------------------------------------------------------  On Boarding Task1--------------------------------------------------------
+Task1A
+
+ SELECT  P.ID as "Property ID",
+                 P.Name as "PropertyName", 
+                 OP.OwnerID as "Owner ID" 
+  FROM OwnerProperty OP
+  JOIN Property P on OP.PropertyID = P.ID
+  WHERE OP.OwnerID = 1426;
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+Task1B
+
+ SELECT OP.PropertyId,
+                PF.CurrentHomeValue, 
+	    OP.OwnerId
+  FROM dbo.OwnerProperty OP
+  JOIN dbo.PropertyFinance PF on OP.PropertyId = PF.PropertyId
+  WHERE OwnerId = 1426;
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+Task1D
+
+SELECT J.JobDescription,
+               JS.Id, 
+	   JS.Status
+FROM dbo.job J
+JOIN dbo.jobstatus JS on J.JobStatusId = JS.Id
+WHERE JS.Status = 'open'
+GROUP BY J.JobDescription,
+                    JS.Id,
+	        JS.Status;
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+        
+
+ 
+
