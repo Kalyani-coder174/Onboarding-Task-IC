@@ -1,3 +1,3 @@
 # Onboarding-Task-IC
 Internship
-https://kalyani-coder174.github.io/Onboarding-Task-IC/ - use this to go to my project
+https://github.com/Kalyani-coder174/Onboarding-Task-IC to go to my project
